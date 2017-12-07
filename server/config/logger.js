@@ -4,8 +4,9 @@ fs = require('fs');
 var env = process.env.NODE_ENV || 'development';
 
 var logDir = 'log';
-
 var tsFormat = () => (new Date()).toLocaleTimeString();
+
+
 // Create the log directory if it does not exist
 if (!fs.existsSync(logDir)) {
    fs.mkdirSync(logDir);

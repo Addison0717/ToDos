@@ -1,0 +1,19 @@
+<template>
+    <div style="padding: 20px; background-color:#84a5ff; border: thick solid black;">
+        <h1>Create a new Profile</h1>
+        <hr style="height:3px; border:none; color:black; background-color:black; margin-right: 5px; margin-left:5px; margin-top:50px; margin-bottom:50px;">
+         <b>First Name:</b> <input value.bind="user.firstName" class="form-control">
+        <br>
+         <b>Last Name:</b> <input value.bind="user.lastName" class="form-control">
+        <br>
+         <b>Email:</b> <input value.bind="user.email" class="form-control">
+        <br>
+         <b>Password:</b> <input value.bind="user.password" class="form-control">
+        <br>
+        <br>
+        <div style="text-align:center;">
+        <button click.trigger="save()" style="font-size:20px"><b>Register</b></button>
+        </div>
+</div>
+</template>
+    

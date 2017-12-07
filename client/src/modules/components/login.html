@@ -1,0 +1,31 @@
+<template>
+    <div style="padding: 30px; background-color:#84a5ff; border: thick solid black;">
+        <h1 style="text-align:center;">Got stuff to do? Me too!</h1>
+        <h4 style="text-align:center; color:#424242;">Log in to see what you have to do</h4>
+<br>
+<hr style="height:3px; border:none; color:black; background-color:black; margin-right: 200px; margin-left:200px;">
+
+        <div id="errorMsg" innerhtml.bind="loginError"></div>
+        <label for="email" style="margin-bottom:0px;"><b>Email</b></label>
+
+    <div style="margin-left:15px; margin-right:15px; margin-top:0px; margin-bottom:0px;">
+        <input value.bind="email" type="email" autofocus class="form-control" id="email" placeholder="Email"></input>
+</div>
+
+        <br>
+
+        <label for="password" style="margin-bottom:0px;"><b>Password</b></label>
+
+<div style="margin-left:15px; margin-right:15px; margin-top:0px; margin-bottom:0px;">
+        <input value.bind="password" type="password" class="form-control" id="password" placeholder="Password"></input>
+</div>
+
+        <br>
+        <br>
+        <div style="text-align: center;">
+        <button click.trigger="login()" style="font-size:20px"><b>Login</b></button>  
+        <button click.trigger="showRegister()" style="font-size:20px"><b>Create Account</b></button>     
+    <!--     <span class="registerLink" click.trigger="showRegister()" style="font-size:75px;">Create Account</span> -->
+        </div>
+    </div>
+</template>
